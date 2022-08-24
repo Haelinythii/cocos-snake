@@ -1,5 +1,5 @@
 # application name
-appName: cocos-boilerplate
+appName: cocos-snake
 
 # pods replica
 replicaCount: 2
@@ -25,7 +25,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/service-upstream: true
-  path: /cocos-boilerplate
+  path: /cocos-snake
   hosts:
     - name: play.test.shopee.co.id
       secretName: test-id-tls
