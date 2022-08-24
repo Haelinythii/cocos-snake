@@ -1,0 +1,53 @@
+{
+  "packages": {
+    "web-mobile": {
+      "orientation": "portrait",
+      "polyfills": {
+        "asyncFunctions": true
+      },
+      "embedWebDebugger": false,
+      "__version__": "1.0.0"
+    },
+    "cocos-service": {
+      "configID": "70c85a",
+      "services": [
+        {
+          "service_id": "235",
+          "service_component_name": "service-analytics",
+          "builder": "/Users/arif.budiman/.CocosCreator/.service/analytics/builder/builder.js",
+          "enable": false,
+          "params": {}
+        }
+      ],
+      "__version__": "3.0.1"
+    }
+  },
+  "name": "cocos-boilerplate",
+  "platform": "web-mobile",
+  "buildPath": "project://",
+  "debug": false,
+  "md5Cache": true,
+  "sourceMaps": false,
+  "replaceSplashScreen": false,
+  "mainBundleCompressionType": "merge_dep",
+  "mainBundleIsRemote": false,
+  "mergeStartScene": false,
+  "experimentalEraseModules": false,
+  "compressTexture": true,
+  "packAutoAtlas": true,
+  "startScene": "0eb4ffa8-5ced-49b1-8639-cbeab4959cfe",
+  "scenes": [
+    {
+      "url": "db://assets/scene/sample/preload.scene",
+      "uuid": "0eb4ffa8-5ced-49b1-8639-cbeab4959cfe",
+      "inBundle": false
+    },
+    {
+      "url": "db://assets/scene/sample/title.scene",
+      "uuid": "11c87f13-be6f-48ab-83e3-9aab515fc05b",
+      "inBundle": false
+    }
+  ],
+  "outputName": "build",
+  "__version__": "1.2.8"
+}

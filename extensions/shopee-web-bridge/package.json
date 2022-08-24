@@ -1,0 +1,16 @@
+{
+  "name": "shopee-web-bridge",
+  "package_version": 2,
+  "version": "1.0.0",
+  "description": "Shopee Web Bridge",
+  "author": "Arif Budiman",
+  "main": "browser.js",
+  "contributions": {
+      "asset-db": {
+          "mount": {
+              "path": "./runtime",
+              "readonly": true
+          }
+      }
+  }
+}

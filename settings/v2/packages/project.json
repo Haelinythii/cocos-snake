@@ -1,0 +1,26 @@
+{
+  "__version__": "1.0.2",
+  "general": {
+    "designResolution": {
+      "width": 375,
+      "fitWidth": true,
+      "fitHeight": false,
+      "height": 587
+    }
+  },
+  "layer": [
+    {
+      "name": "BACKGROUND",
+      "value": 1
+    },
+    {
+      "name": "GAMEPLAY",
+      "value": 2
+    }
+  ],
+  "fbx": {
+    "legacyFbxImporter": {
+      "visible": true
+    }
+  }
+}
