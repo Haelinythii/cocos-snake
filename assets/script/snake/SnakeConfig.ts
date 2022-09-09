@@ -105,11 +105,6 @@ export class SnakeConfig extends Component {
 
         }
 
-        // this.makeIndividualPart(this.bodyPrefabs, PartType.BODY, 5, 4);
-        // this.makeIndividualPart(this.bodyPrefabs, PartType.BODY, 5, 3);
-        // this.makeIndividualPart(this.bodyPrefabs, PartType.BODY, 5, 2);
-        // this.makeIndividualPart(this.tailPrefabs, PartType.TAIL, 5, 1);
-
         this.setupHeadDirection();
     }
 
@@ -124,7 +119,7 @@ export class SnakeConfig extends Component {
 
         let newPartNode: Node = instantiate(prefab);
         this.node.addChild(newPartNode);
-        newPartNode.setPosition(cell.worldPosition);
+        newPartNode.setPosition(cell.cellNode.getPosition());
 
         let newPart: Part = {
             partNode: newPartNode,
@@ -314,7 +309,7 @@ export class SnakeConfig extends Component {
 
     getCellNextPositionFromPart(part: Part): Vec3 | undefined {
         let nextTargetPosition: Vec3 | undefined = Vec3.ZERO;
-        nextTargetPosition = this.board.getCellConfigFromIndex(part.nextIndexPosition.x, part.nextIndexPosition.y)?.worldPosition;
+        nextTargetPosition = this.board.getCellConfigFromIndex(part.nextIndexPosition.x, part.nextIndexPosition.y)?.cellNode.getPosition();
         return nextTargetPosition;
     }
 

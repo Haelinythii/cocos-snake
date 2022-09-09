@@ -1,0 +1,17 @@
+{
+  "__version__": "3.0.3",
+  "options": {
+    "web-desktop": {
+      "configID": "70c85a",
+      "services": []
+    },
+    "web-mobile": {
+      "configID": "70c85a",
+      "services": []
+    }
+  },
+  "builder-options": {
+    "configID": "70c85a",
+    "services": []
+  }
+}

@@ -3,4 +3,5 @@
 /library 
 /local
 /temp
-
+/node_modules
+/web-mobile

@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Vec2, Vec3, instantiate, CCInteger, Prefab, UITransform, randomRangeInt } from 'cc';
+import { _decorator, Component, Node, Vec2, Vec3, instantiate, CCInteger, Prefab, UITransform, randomRangeInt, math } from 'cc';
 import { ShopeeSprite } from '../sample/classes/shopeeSprite';
 import { GameManager } from './GameManager';
 const { ccclass, property } = _decorator;
@@ -50,9 +50,8 @@ export class BoardSpawner extends Component {
                 let cellWidth: number = cell.getComponent(UITransform)?.contentSize.x!;
                 let cellHeight: number = cell.getComponent(UITransform)?.contentSize.y!;
 
-                let positionX: number = cellWidth * i;
-                let positionY: number = cellHeight * j;
-                // let cellWorldPosition: Vec3 = Vec3.ZERO;
+                let positionX: number = cellWidth * (i - Math.round(BoardSpawner.CELL_COUNT_WIDTH / 2));
+                let positionY: number = cellHeight * (j - Math.round(BoardSpawner.CELL_COUNT_HEIGHT / 2));
 
                 let curCelllConfig: CellConfig = {
                     cellNode: cell,
